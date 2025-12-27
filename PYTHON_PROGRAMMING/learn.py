@@ -1,5 +1,5 @@
 
-# PRIMITIVE DATATYPES IN PYTHON ARE INT, FLOAT, BOOL, STRING
+# PRIMITIVE DATATYPES IN PYTHON ARE INT, FLOAT, BOOL, STRING Stores a single value
 
 name = 'vijay'      # string
 age = 25   # integer
@@ -62,7 +62,8 @@ x = 10 == 10   # equals with respect to type
 x = 5 !=  "10"  # not quals with respect to type true bcz int != str
 x = "bag" == "BAG"  # false bcz its char values are not same  b = 95 B = 66  in ASCII
 
-x = x + 10      # agumentad assignment operator
+x = x + 10      # aug
+# mentad assignment operator
 x += 10
 x = 10.7
 print(round(x))  # round the value
@@ -73,13 +74,13 @@ print(abs(-2.8))   # absolute
 
 # CONSOLE INPUT
 
-x = input("x: ")        # input always come in string type
+# x = input("x: ")        # input always come in string type
 x= int(x)               # type cast into int
 x += 5
 print(x)
 
 # TYPE CASTS
-
+# Always know the data type you are working with.
 # int(x)
 # float(x)
 # str(x)

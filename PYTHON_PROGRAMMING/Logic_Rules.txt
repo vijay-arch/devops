@@ -1,0 +1,14 @@
+1. Always ask:
+“What data do I have?”
+“What should I do with it?”
+
+2. Always know the data type you are working with.
+
+3. Conditions return True or False
+
+4. Loop = condition + repetition + update
+
+5. Since Python will ignore string literals that are not assigned to a variable,
+you can add a multiline string (triple quotes) in your code, and place your comment inside it:
+
+6.
