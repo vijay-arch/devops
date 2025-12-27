@@ -85,3 +85,127 @@ print(x)
 # str(x)
 # bool(x)
 
+# CONDITIONS
+
+# Conditions don't always have to be strict Booleans. In Python, "falsy" values include 0, None, empty strings "",
+# and empty collections (like [] or {}). Almost all other values are "truthy".
+
+temperature = 45
+if temperature > 30:
+    print("too hot")
+elif temperature < 30:
+    print("too cold")
+else:
+    print("ok")
+
+print("done")
+
+# Shorthand of if else block
+score = 54
+result = "pass" if score > 35 else "fail"
+print(result)
+
+# Logical operators and, or, not
+
+high_income = True
+good_credits = True
+
+if high_income and good_credits :
+    print("Eligible")
+else:
+    print("Not eligible")
+
+if high_income or good_credits :
+    print("Eligible")
+else:
+    print("Not eligible")
+
+if not (high_income and good_credits) :
+    print("Eligible")
+else:
+    print("Not eligible")
+
+
+# LOOPS
+
+# The for loop is used when you know in advance how many times you want to iterate
+# or when you need to traverse a sequence like a list, string, or range.
+
+# A for loop iterates over a sequence (list, string, range, etc.)
+
+#for variable in sequence:
+#    code to repeat
+# Python automatically picks one item at a time
+# for loop will iterate each item one by one at a time
+for vijay in range(3):
+    print("Attempt: ",vijay + 1)
+
+for letter in "vijay":
+    print(letter)
+
+# A while loop runs as long as a condition is true
+# while condition:
+#     code to repeat
+# Loop will execute code until the condition becomes false and it will keep running for the time of condition true
+
+count = 1
+
+while count:
+    print(count)
+    count = 0
+
+# break – Stop the loop
+for i in range(10):
+    if i  == 5:
+        break
+    print(i)
+
+# continue – Skip current iteration
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+
+# pass – Do nothing (placeholder)
+for i in range(3):
+    pass
+
+
+for i in range(5):
+    for j in range(5):
+        print(i,j)
+
+# range(start, stop, step)
+
+for i in range(1, 10, 2):
+    print(i)
+
+# for else we can use else statement with for loop if the loop exits normally without break statement then else block will executes
+for i in range(10):
+    print(i * "*")
+    if i == 5:
+        break
+else:
+    print("printed all * ")
+
+
+# DATA TYPES
+
+'''
+x = "Hello World"	                str	
+x = 20	                            int	
+x = 20.5	                        float	
+x = 1j	                            complex	
+x = ["apple", "banana", "cherry"]	list	
+x = ("apple", "banana", "cherry")	tuple	
+x = range(6)	                    range	
+x = {"name" : "John", "age" : 36}	dict	
+x = {"apple", "banana", "cherry"}	set	
+x = frozenset({"apple", "banana", "cherry"})	frozenset	
+x = True	                        bool	
+x = b"Hello"	                    bytes	
+x = bytearray(5)	                bytearray	
+x = memoryview(bytes(5))	        memoryview	
+x = None	                        NoneType
+'''
+
