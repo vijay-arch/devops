@@ -11,4 +11,8 @@
 5. Since Python will ignore string literals that are not assigned to a variable,
 you can add a multiline string (triple quotes) in your code, and place your comment inside it:
 
-6.
+6. python follow PEMDAS operator precedence (),**,*,/,+,-
+
+7. should not use python keyword or module name for a file_name it will look through in you defined file not in python module.
+
+8. immutable objects in python are int, float, str, tuple and mutable objects are list, dictionary, sets

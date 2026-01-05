@@ -15,6 +15,8 @@ for i in alphanum:
 value = input("Enter the value :")
 if value in alphanum:
     print("Valid check")
+else :
+    print("invalid check")
 
 for i in range(10):
     print(i * "*")

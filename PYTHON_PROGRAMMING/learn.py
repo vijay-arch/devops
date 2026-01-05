@@ -126,6 +126,20 @@ if not (high_income and good_credits) :
 else:
     print("Not eligible")
 
+# MATCH CASE
+
+x = int(input("Enter a number:"))
+
+match x:            # check the matching cases and execute it
+    case 1:             # multiple cases
+        print('x is 1')
+    case 2:
+        print('case is 2')
+    case _ if x != 90:          # multiple default cases
+        print(x, 'is not 90')
+    case _:
+        print('final default case')
+
 
 # LOOPS
 
@@ -209,4 +223,44 @@ x = bytearray(5)	                bytearray
 x = memoryview(bytes(5))	        memoryview	
 x = None	                        NoneType
 '''
+
+# DATA STRUCTURES ( DATA + LOGIC )
+
+# List is a ordered collection of data and it is mutable ( can change and resize ) , can store ,mixed data types
+# Can store mixed data types, and its can be indexed and iterable
+
+list = ["vijay", 25, True, 3.8]
+m = list        # m stores the reference of the list veriable if m changes list also changes bcx both var names refer same memory object
+list[0] = 32
+print(list[0])
+print(list[0])      # list can be indexed
+print(list[-1])
+print(list[1:3:2])  # list slicing [start:end:jump_sequence]
+list.append(30)     # add at end of list
+list.insert(2, 40)      # add at index
+list.remove(3.8)        # remove value
+list.pop()          # remove last value
+
+print(list)
+
+for item in list:           # list can iterable
+    print(item)
+
+
+# TUPLE ( READ-ONLY LIST )
+# a tuple is a built-in data type used to store an ordered collection of elements
+# Ordered: Elements maintain a defined order that will not change during the tuple's lifetime.
+# Immutable: Once created, you cannot change, add, or remove individual elements.
+# Heterogeneous: A single tuple can store elements of different data types (e.g., integers, strings, and even lists).
+# my_tuple = (1, 2, "Python"), empty = (), single = (5,), tup = 1, 2, 3 - without () it will treat as tuple
+# Indexing & Slicing tuple[0], tuple[0:1]
+# Unpacking = name, age = ("Alice", 25)
+# Concatenation & Repetition = (1, 2) + (3, 4) results in (1, 2, 3, 4)
+# Membership Test = in and not in
+# tuples have only two built-in methods: count(value) to get the number of occurrences of a value,
+# and index(value) to find the index of the first occurrence
+
+tuple = 1,5,4
+
+print(tuple)
 
